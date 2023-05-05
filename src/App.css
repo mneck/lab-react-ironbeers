@@ -38,7 +38,7 @@ h1 {
   margin: auto;
 }
 
-p, h2, h3, h4 {
+p, h2, h3, h4, h5 {
   padding-left: 2rem;
   text-align: left;
 }

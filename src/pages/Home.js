@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function Home() {
-  const [beers, setBeers] = useState(null);
+  const [beers, setBeers] = useState([]);
 
   useEffect(() => {
     axios.get("https://ih-beers-api2.herokuapp.com/beers").then((response) => {
@@ -27,14 +27,14 @@ function Home() {
       {beers.map((beer) => (
         <div className="beerCard">
           <div className="beerImg">
-            <a href="/beers/:beerId">
+            <a href={`/beers/${beer._id}`}>
               <img src={beer.image_url} alt={beer.name} className="beerImg" />
             </a>
           </div>
           <div className="beerText">
             <h3>{beer.name}</h3>
             <h4>{beer.tagline}</h4>
-            <p>Created by: {beer.contributed_by}</p>
+            <p>Contributed by: {beer.contributed_by}</p>
           </div>
         </div>
       ))}
