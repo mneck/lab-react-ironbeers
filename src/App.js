@@ -7,7 +7,6 @@ import RandomBeer from "./pages/RandomBeer";
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/random-beer" element={<RandomBeer />} />
