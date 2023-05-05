@@ -33,10 +33,29 @@
   margin-right: auto;
 }
 
-p, h1 {
+h1 {
+  padding-top: 20px;
+  margin: auto;
+}
+
+p, h2, h3, h4 {
   padding-left: 2rem;
   text-align: left;
+}
 
+.beerImg {
+  display: block;
+  height: 200px;
+}
+
+.beerCard {
+  display: flex;
+  align-items: row;
+  border-bottom: solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .imgSpacing {
